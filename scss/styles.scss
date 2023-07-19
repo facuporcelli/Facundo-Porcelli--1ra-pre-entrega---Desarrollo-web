@@ -1,117 +1,15 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "reset";
+@import "variables";
+@import "navegador";
+@import "carrousel";
+@import "tarjetas";
+@import "formulario";
 
 
-.navegador{
-    background-color: #353c17;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    ul{
-        margin-top: 10px;;
-        list-style: none;
-        display: flex;
-        justify-content: end;
-        li a{
-            color:#fff;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-style: italic;
-            font-size: 20px;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            justify-content: space-between;
-        }
-    }
-    img{
-        margin: 5px;
-        height: 45px;
-        width: 45px;
-    }
-}
-
-.navegador .menu{
-    display: none;
-}
-@media(max-width:556px){
-    .navegador .menu{
-        top: 0;
-        display: block;
-        color: #fff;
-        font-size: 30px;
-        margin: 10px;
-        order: -1;
-    }
-    .navegador .menu:hover + ul{
-        left: 0px;
-    }
-    .navegador ul:hover{
-        left: 0px;
-    }
-    .navegador ul{
-        top: 0;
-        left: -600px;
-        position: fixed;
-        background-color: #353c17;
-        width: 80vw;
-        height: 100%;
-        padding-top: 100px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        transition: 0.5s;
-       
-    }
-}
-    
-
-.carousel-item img{
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    @media(max-width:768px){
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-    }
-    @media(max-width:320px){
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-}
-
-
-.carousel-caption {
-    h5{
-        color: rgb(0, 0, 0);
-        font-size: 50px;
-        text-shadow: 4px 1px 0px #ffffff;
-    }
-    p{
-        color: rgb(0, 0, 0);
-        font-size:20px;
-        text-shadow: 2px 1px 0px #ffffff;
-    }
-}
-
-.carousel-control-prev-icon{
-    background-color: rgb(77, 75, 75);
-}
-.carousel-control-next-icon{
-    background-color: rgb(77, 75, 75);
-}
 .contenido_main_index {
     width: 100%;
-    background-color: #fbd248;
+    background-color: $bg-color;
     padding: 30px;
     padding-top:10px;
     h2{ 
@@ -133,13 +31,12 @@
     }
 }
 
-
 .contenido_main_servicios{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    background-color: #fbd248;
+    background-color: $bg-color;
     padding: 20px;
     @media(max-width: 676px){
             display: flex;
@@ -148,14 +45,12 @@
         }
 }
 
-
-
 .contenido_main_quienes_somos{   
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #fbd248;
+    background-color: $bg-color;
     padding: 20px;
     h2{
         font-size: 30px;
@@ -171,11 +66,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     label{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
     }
 }
-
 
 .contenido_footer{
     background-color: #fbd421;
@@ -190,7 +83,6 @@
         margin: 5px;
     }
     h4{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 15px;
         margin: 5px;
     }
@@ -204,105 +96,6 @@
 
 
 
-.tarjetas{
-    border: solid 2px;
-    border-radius: 5px;
-    width: 300px;
-    margin: 5px;
-    padding: 5px;
-    transition: 1s;
-    &:hover{
-        background-color: #353c17;
-        color: #fff;
-    }
-    @media(max-width:350px){
-            width:250px;
-        }
-    h3{
-        font-size: 30px;
-        text-align: center;
-        @media(max-width:768px){
-            font-size: 20px;
-        }
-    }
-    p{
-        font-size: 20px;
-        text-align: justify;
-        @media(max-width:768px){
-            font-size: 15px;
-        }
-    }
-    img{
-        width: 100%;
-        height: 300px;
-        @media(max-width:350px){
-            height: 200px;
-        }
-
-    }
-}
-
-
-.tarjetas_2{
-    width: 300px;
-    border: solid 2px;
-    border-radius: 5px;
-    margin: 5px;
-    transition: 1s;
-    &:hover{
-        background-color: #353c17;
-        color: #fff;
-    }
-    h2{
-        font-size: 30px;
-        text-align: center;
-    }
-    h3{
-        font-size: 20px;
-        text-align: center;
-    }
-    h4{
-        font-size: 40px;
-        text-align: center;
-    }
-    ul li{
-        font-size: 15px;
-        text-align: left;
-        list-style:inside;
-    }
-    img{
-        width: 100%;
-    }
-}
-
-
-.formulario{
-    width: 50%;
-    padding: 10px; 
-    margin: 10px auto;
-    border-radius: 5px;
-    border: solid;
-    border-color: black;
-    color: #fff;
-    background-color: #353c17;
-    @media(max-width:768px){
-            width: 75%;
-        }
-    }
-    input{
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.822)
-    }
-    button{
-        font-size: 15px;
-        border-radius: 5px;
-    }
-    .dato{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
 
 
 

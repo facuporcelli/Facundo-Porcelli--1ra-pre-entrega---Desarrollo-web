@@ -94,10 +94,20 @@
   font-size: 50px;
   text-shadow: 4px 1px 0px #ffffff;
 }
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 30px;
+  }
+}
 .carousel-caption p {
   color: rgb(0, 0, 0);
   font-size: 20px;
   text-shadow: 2px 1px 0px #ffffff;
+}
+@media (max-width: 768px) {
+  .carousel-caption p {
+    font-size: 10px;
+  }
 }
 
 .carousel-control-prev-icon {
@@ -106,103 +116,6 @@
 
 .carousel-control-next-icon {
   background-color: rgb(77, 75, 75);
-}
-
-.contenido_main_index {
-  width: 100%;
-  background-color: #fbd248;
-  padding: 30px;
-  padding-top: 10px;
-}
-.contenido_main_index h2 {
-  font-size: 50px;
-}
-@media (max-width: 768px) {
-  .contenido_main_index h2 {
-    font-size: 30px;
-  }
-}
-.contenido_main_index p {
-  font-size: 25px;
-}
-@media (max-width: 768px) {
-  .contenido_main_index p {
-    font-size: 15px;
-  }
-}
-.contenido_main_index img {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 10px;
-}
-
-.contenido_main_servicios {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #fbd248;
-  padding: 20px;
-}
-@media (max-width: 676px) {
-  .contenido_main_servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.contenido_main_quienes_somos {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #fbd248;
-  padding: 20px;
-}
-.contenido_main_quienes_somos h2 {
-  font-size: 30px;
-}
-.contenido_main_quienes_somos h3 {
-  font-size: 20px;
-}
-
-.contenido_main_contacto {
-  width: 100%;
-  background-color: #fbd248;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.contenido_main_contacto label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-}
-
-.contenido_footer {
-  background-color: #fbd421;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  column-gap: 10px;
-  text-align: center;
-  align-items: start;
-  padding-top: 10px;
-}
-.contenido_footer .redes i {
-  font-size: 40px;
-  margin: 5px;
-}
-.contenido_footer h4 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  margin: 5px;
-}
-@media (max-width: 768px) {
-  .contenido_footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 }
 
 .tarjetas {
@@ -287,7 +200,7 @@
   padding: 10px;
   margin: 10px auto;
   border-radius: 5px;
-  border: solid;
+  border: solid 2px;
   border-color: black;
   color: #fff;
   background-color: #353c17;
@@ -313,6 +226,101 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.contenido_main_index {
+  width: 100%;
+  background-color: #fbd248;
+  padding: 30px;
+  padding-top: 10px;
+}
+.contenido_main_index h2 {
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .contenido_main_index h2 {
+    font-size: 30px;
+  }
+}
+.contenido_main_index p {
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .contenido_main_index p {
+    font-size: 15px;
+  }
+}
+.contenido_main_index img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.contenido_main_servicios {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fbd248;
+  padding: 20px;
+}
+@media (max-width: 676px) {
+  .contenido_main_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contenido_main_quienes_somos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fbd248;
+  padding: 20px;
+}
+.contenido_main_quienes_somos h2 {
+  font-size: 30px;
+}
+.contenido_main_quienes_somos h3 {
+  font-size: 20px;
+}
+
+.contenido_main_contacto {
+  width: 100%;
+  background-color: #fbd248;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contenido_main_contacto label {
+  font-size: 20px;
+}
+
+.contenido_footer {
+  background-color: #fbd421;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  column-gap: 10px;
+  text-align: center;
+  align-items: start;
+  padding-top: 10px;
+}
+.contenido_footer .redes i {
+  font-size: 40px;
+  margin: 5px;
+}
+.contenido_footer h4 {
+  font-size: 15px;
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .contenido_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
