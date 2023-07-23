@@ -9,6 +9,7 @@
     &:hover{
         background-color: #353c17;
         color: #fff;
+        transform: translate(10px, 20px);
     }
     @media(max-width:350px){
             width:250px;
@@ -47,6 +48,7 @@
     &:hover{
         background-color: #353c17;
         color: #fff;
+        transform: translate(10px, 20px);
     }
     h2{
         font-size: 30px;

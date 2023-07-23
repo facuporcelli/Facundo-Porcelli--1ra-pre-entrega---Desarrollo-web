@@ -129,6 +129,7 @@
 .tarjetas:hover {
   background-color: #353c17;
   color: #fff;
+  transform: translate(10px, 20px);
 }
 @media (max-width: 350px) {
   .tarjetas {
@@ -173,6 +174,7 @@
 .tarjetas_2:hover {
   background-color: #353c17;
   color: #fff;
+  transform: translate(10px, 20px);
 }
 .tarjetas_2 h2 {
   font-size: 30px;
@@ -298,7 +300,7 @@ button {
 }
 
 .contenido_footer {
-  background-color: #fbd421;
+  background-image: linear-gradient(to bottom, #fbd248, #fbd248, #353c17);
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   column-gap: 10px;
