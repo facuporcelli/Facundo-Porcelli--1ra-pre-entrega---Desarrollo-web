@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.tarjetas_2 {
+  border-radius: 5px;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  transition: 1s;
+  background-color: #ffdf4e;
+}
+
 .navegador {
   background-color: #353c17;
   position: fixed;
@@ -125,6 +134,7 @@
   margin: 5px;
   padding: 5px;
   transition: 1s;
+  background-color: #fbd248;
 }
 .tarjetas:hover {
   background-color: #353c17;
@@ -165,11 +175,7 @@
 }
 
 .tarjetas_2 {
-  width: 300px;
   border: solid 2px;
-  border-radius: 5px;
-  margin: 5px;
-  transition: 1s;
 }
 .tarjetas_2:hover {
   background-color: #353c17;
